@@ -1,0 +1,58 @@
+#logos{
+        height: 260px;
+        padding-left: 40%
+}
+
+body{
+        background-image: url(simple-backgrounds-17282-17838-hd-wallpapers.jpg);
+}
+
+.main-nav{
+      padding-left: 600px;
+      
+}
+
+#hi {
+    text-decoration: none;
+    font-size: 150%;
+    color:blanchedalmond;  
+}
+
+h1{
+    color: darkkhaki;
+}
+
+#movie{
+        height: 400px;
+        padding-left: 10px;
+}
+
+textarea{
+    height: 50px;
+    width: 500px;
+}
+
+#ooo{
+        text-decoration: none;
+        font-size: 30px;
+}
+
+@media screen and (max-width:320px){
+    .main-nav{
+        font-size: 20px;
+        padding: inherit;
+    }
+    #logos{
+            padding: inherit;
+            height: 200px;
+    }
+    #hi{
+            font-size: 30px;
+    }
+    textarea{
+            width: 300px;
+    }
+}
+
+       
+   

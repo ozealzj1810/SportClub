@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="contact.css" rel="stylesheet" target="_blank">
+    <title>Contact</title>
+</head>
+
+<body class="contact">	
+	
+	<header>
+	<h2 class="logo">
+	<a href="index.html">
+	<img src="sao_paulo_circle_cloud_outline_scr-.jpg" id="qwe"alt="São Paulo Movie Store" title="São Paulo Movie Store"  />
+	</a>
+	</h2>
+	<div class="main-nav">
+	<nav>
+	<a href="home.html" id="hi">Home |</a>
+	<a href="all%20movies.html" id="hi">All Movies |</a> 
+	<a href="About.html" id="hi">About |</a>
+	<a href="contact.html" id="hi">Contact Us</a>
+	</nav>
+	</div>
+	</header>
+	
+	<div class="yield">
+	<main>
+	<section>
+	<h1>Contact Us</h1>
+	<h3>Your comments are important to us. </h3>
+	
+	<div class="label">
+	Form sumbitted successfully.
+	</div>
+	<div class="label">
+	Form submissing failed.<br> It seems that you’re offline now.
+	</div>
+	
+	<div class='tab-panels'>
+	<div class='tabs'>
+	<!-- Tab navigation --><br>
+	<a href='#tabcontent1' id='tab1'>Movie Review |</a>
+	<a href='#tabcontent2' id='tab2'>Job Applying |</a>
+	<a href='#tabcontent3' id='tab3'>Others</a>
+	</div>
+	<div id='tabcontent1' class='tab-content'>
+	<h2>Movie Review</h2>
+	<form action='#' method='get' oninput='output.value=rating.value'>
+	<p id="mmm">Note: [*] denotes mandatory field.</p>
+	<fieldset>
+	<label for='form1-name'>Your Name:</label>
+	<input type='text' id='form1-name' name='name' onblur="name1" required>
+	</fieldset>
+	<fieldset>
+	<label for='form1-movie'>Which Movie: </label>
+	<input  type='text' id='form1-movie' name='movie'  onblur="valid" required>
+	</fieldset>
+	<fieldset>
+	<label for='form1-comments'>Your comments: </label>
+	<input type='text' id='form1-comments' name='comment' onblur="length1" required>
+	</fieldset>
+	<fieldset>
+	<label for='rating'>How you rate: <span>0-5</span></label>
+	<input type='range' id='rating' name='rating' min='0' max='5' value='3' step='1' >
+	<output name='output' for='rating'>3</output>
+	</fieldset>
+	<input type='submit' value='Submit Review'>
+	</form>
+	</div>
+	<div id='tabcontent2' class='tab-content'>
+	<h2>Job Applying</h2>
+	<form action='#' method='get'>
+	<p id="mmm">Note:denotes mandatory field.</p>
+	<fieldset>
+	<label for='form2-name'> Your Name:</label>
+	<input type='text' id='form2-name' name='name' required>
+	</fieldset>
+	<fieldset>
+	<label for='form2-email'>Your Email:</label>
+	<input type='email' id='form2-email' name='email' required>
+	</fieldset>
+	<fieldset>
+	<label for='form2-position'>Which position do you want to apply? :</label>
+	<input type='text' id='form2-position' name='position' required>
+	</fieldset>
+	<fieldset>
+	<label for='form2-resume'> Your resume: </label>
+	<textarea id='form2-resume' name='resume' required></textarea>
+	</fieldset>
+	<input type='submit' value='Submit Job Application'>
+	</form>
+	</div>
+	
+	<div id='tabcontent3' class='tab-content'>
+	<h2>Others</h2>
+	<form action='#' method='get'>
+	<p id="mmm">Note: [*] denotes mandatory field.</p>
+	<fieldset>
+	<label for='form3-name'>Your Name :</label>
+	<input type='text' id='form3-name' name='name'>
+	</fieldset>
+	<fieldset>
+	<label for='form2-email'>Your Email:</label>
+	<input type='email' id='form2-email' name='email' required>
+	</fieldset>
+	<fieldset>
+	<label for='form3-comments'>[*] Your comments: </label>
+	<textarea id='form3-comments' name='comment' required></textarea>
+	</fieldset>
+	<input type='submit' value='Submit Comments'>
+	</form>
+	</div>
+	</div>
+	
+	</section>
+	
+	</main>
+	</div>
+	
+	<footer>
+	<div class="footer-help">
+	<div class="contact">
+	<h2>Contact Us</h2> Get in touch here if you have any queries or issues.
+	</div>
+	<div class="support">
+	<h2>Help & Support</h2> Click here for FAQs, order information, T&Cs, errata and code downloads.
+	</div>
+	<div class="newsletter">
+	<h2>Alerts & Offers</h2> Sign up to our emails for regular updates and exclusive discounts.
+	<form>
+	<input type='email' placeholder='Enter your email address'>
+	<input type='submit' value='subscribe'>
+	</form>
+	</div>
+	<div class="search">
+	<h2>Search Movies</h2>
+	<form>
+	<input type='text' placeholder='Movie name, year, actors'>
+	<input type='submit' value='search'>
+	</form>
+	</div>
+	</div>
+	<div class="back-to-top">
+	<a href='#top'>⬆ Back to Top.</a>
+	</div>
+        <br>
+	<div class="copyright">
+	&copy; 2015. São Paulo Movie Store.
+	</div>
+	<div class="footer-nav">
+	<nav>
+	<div class="main-nav">
+	<nav>
+	<a href="index.html" id="hi">Home |</a>
+	<a href="all%20movies.html" id="hi">All Movies |</a> 
+	<a href="about.html" id="hi">About |</a>
+	<a href="contact.html" id="hi">Contact Us</a>
+	</nav>
+	</div>
+	</nav>
+	</div>
+	</footer>
+    
+    <script type="text/javascript">
+    function length1(){
+        let mesej = document.getElementById("form1-comments").value;
+        if(mesej.length < 10){
+            alert("Your comment less then 10 characters");
+        }
+    }
+    
+    function length2(){
+        let mesej = document.getElementById("form3-comments").value;
+        if(mesej.length < 10){
+            alert("Less then 10 characters");
+        }
+    }
+    
+    function valid(){
+        let mesej = document.getElementById("form1-movie").value;
+        if(mesej.length == 0){
+            alert("Please fill the movie name");
+        }
+    }
+
+    function name1(){
+        let mesej = document.getElementById("form1-name").value;
+        if(mesej.length == 0){
+            alert("Please fill the name");
+        }
+    }
+    
+    function name2(){
+        let mesej = document.getElementById("form2-name").value;
+        if(mesej.length == 0){
+            alert("Please fill the name");
+        }
+    }
+    
+    function name3(){
+        let mesej = document.getElementById("form3-name").value;
+        if (mesej.length == 0){
+            alert("Please fill the name");
+        }
+    }
+    </script>
+	
+</body>
+</html>

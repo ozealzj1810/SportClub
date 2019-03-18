@@ -1,0 +1,79 @@
+#qwe{
+        height: 260px;
+        padding-left: 40%;
+}
+
+body{
+        background-image: url(simple-backgrounds-17282-17838-hd-wallpapers.jpg)
+}
+
+#hi {
+    text-decoration: none;
+    font-size: 150%;
+    color:blanchedalmond; 
+    padding-left: 10px; 
+}
+
+.main-nav{
+      padding-left: 570px;
+      
+}
+
+h1{
+    color: darkkhaki;
+    font-size:25px
+}
+
+h3{
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+.label{
+        color: antiquewhite;
+        font-size: 15px;
+}
+
+#tab1{
+        text-decoration: none;
+        font-size: 20px;
+    color:darkkhaki;
+        
+}
+
+#tab2{
+        text-decoration: none;
+            font-size: 20px;
+    color:darkkhaki;
+}
+
+#tab3{
+        text-decoration: none;
+            font-size: 20px;
+        color:darkkhaki;
+}
+
+h2{
+    color: darkkhaki;
+    font-size: 25px;
+}
+
+#mmm{
+    color: darkred;
+}
+
+@media screen and (max-width:320px){
+    .main-nav{
+        font-size: 15px;
+        padding: inherit;
+    }
+    #qwe{
+         padding: inherit;
+        height: 200px;
+    }
+    #hi{
+            font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1440px){

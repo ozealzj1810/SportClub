@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="about.css" rel="stylesheet" target="_blank"> 
+    <title>About Us</title>
+    
+    <script type='text/javascript'>
+    var map, baseLayer, drawingManager;
+
+    function GetMap() {
+        map = new Microsoft.Maps.Map('#myMap', {
+            credentials: 'YourBingMapsKey'
+        });
+    
+        
+    
+      fun
+        //Load the DrawingTools module
+        Microsoft.Maps.loadModule('Microsoft.Maps.DrawingTools', function () {
+            //Create a base layer to add drawn shapes.
+            baseLayer = new Microsoft.Maps.Layer();
+            map.layers.insert(baseLayer);
+
+            //Create an instance of the DrawingTools class and bind it to the map.
+            var tools = new Microsoft.Maps.DrawingTools(map);
+
+            //Show the drawing toolbar and enable editting on the map.
+            tools.showDrawingManager(function (manager) {
+                drawingManager = manager;
+
+                Microsoft.Maps.Events.addHandler(drawingManager, 'drawingEnded', function (e) {
+                    //When use finisihes drawing a shape, removing it from the drawing layer and add it to the base layer.
+                    var shapes = drawingManager.getPrimitives();
+
+                    if (shapes) {
+                        drawingManager.clear();
+                        baseLayer.add(shapes);
+                    }
+                });
+
+                Microsoft.Maps.Events.addHandler(drawingManager, 'drawingChanging', function (e) {
+                    //When the drawing is changing, clear the base layer.
+                    baseLayer.clear();
+                });
+            })
+        });
+    }
+    </script>
+    
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
+</head>
+
+<body>
+    <header>
+	<h2 class="logo">
+	<a href="index.html">
+	<img src="sao_paulo_circle_cloud_outline_scr-.jpg"/ id="logos">
+	</a>
+	</h2>
+	<div class="main-nav">
+	<nav>
+	<a href="home.html" id="hi">Home |</a>
+	<a href="all%20movies.html" id="hi">All Movies |</a> 
+	<a href="About.html" id="hi">About |</a>
+	<a href="contact.html" id="hi">Contact Us</a>
+        
+	</nav>
+	</div>
+	</header><br>
+    
+    <h2>About Sao Paulo Movie Store</h2>
+    <h3>This is a store for your movie nights.</h3>
+    <h2>Store Location</h2>
+    <h3>We have 3 stores in Brazil and 2 store in Malaysia.</h3> <br>
+    <div id="myMap" style="position:relative;width:600px;height:400px;"></div>
+
+    <h4>Quadra 706 Sul Alameda 3, 956, Palmas-TO <br>+55 (14) 3364-2428</h4>
+    
+    
+    
+    <br>
+    <img src="Capture1.JPG" class="aaa">
+    <h4>Rua Princesa dos Campos, 1743, Campo Mourão-PR<br>+55 (14) 3364-5254</h4>
+    <img src="Capture4.JPG" class="aaa">
+    <h4>Rua Antônio Amâncio Filho, 984, Patos de Minas-MG<br>+55 (14) 3323-5434</h4>
+    <img src="Capture.JPG" class="aaa">
+    <h4>Kota Kinabalu,Sabah<br>088-326192</h4>
+    <img src="Capture3.JPG" class="aaa">
+    <h4>Mukah,Sarawak<br>089-234897</h4>
+    
+    Enter your E-mail: <input type="text" onfocus="myFunction(this)" id="onfocus"> <br>
+    Enter your Comment: <input type="text" onfocus="myFunction(this)" > <br>
+    <input type="submit" value="Submit" >
+    
+    <script>
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+</script>
+<br>
+
+<script>
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+</script>
+
+    <h2>Contact Us</h2>
+    <h3>Get in touch here if you have any queries or issues.<br><br>Help & Support<br>Click here for FAQs, order information, T&Cs, errata and code downloads</h3>
+</body>
+</html>

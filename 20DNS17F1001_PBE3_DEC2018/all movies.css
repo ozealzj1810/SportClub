@@ -1,0 +1,92 @@
+#logos{
+        height: 260px;
+        padding-left: 40%
+}
+
+.logo{
+        
+}
+
+#inside{
+        height: 400px;
+}
+
+.gambar{
+        height: 300px;
+        padding-right: 30px;
+}
+
+#poster{
+        height: 300px;
+}
+
+body{
+        background-image: url(simple-backgrounds-17282-17838-hd-wallpapers.jpg);
+}
+
+h1{
+    color: darkkhaki;
+}
+
+p{
+    color: antiquewhite;
+}
+
+.price{
+    color:firebrick;
+    font-size: 50px;
+    
+}
+
+#wuu{
+    color: antiquewhite;
+}
+
+h2{
+    color: darkkhaki;
+}
+
+h4{
+    color: darkkhaki;
+}
+
+.main-nav{
+      padding-left: 600px;
+      
+}
+
+#hi {
+    text-decoration: none;
+    font-size: 150%;
+    color:blanchedalmond;  
+}
+
+#hi a:hover{
+        color: chocolate;
+}
+
+@media screen and (max-width:320px){
+    .main-nav{
+        font-size: 20px;
+        padding: inherit;
+    }
+    #logos{
+            padding:inherit;
+            height: 200px;
+    }
+    #hi{
+            font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1440px){
+    
+
+    #hero{
+            color: burlywood;
+    }
+    
+    .movie-cover-link{
+        text-decoration: none;
+    }
+  

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+        <script>alert("Welcome to Sao Paulo Cinema Website!")</script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="home.css" rel="stylesheet" target="_blank">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+	<h2 class="logo">
+	<a href="index.html">
+	<img src="sao_paulo_circle_cloud_outline_scr-.jpg"/ id="logos">
+	</a>
+	</h2>
+	<div class="main-nav">
+	<nav>
+	<a href="home.html" id="hi">Home |</a>
+	<a href="all%20movies.html" id="hi">All Movies |</a> 
+	<a href="About.html" id="hi">About |</a>
+	<a href="contact.html" id="hi">Contact Us</a>
+    
+	</nav>
+	</div>
+	</header>
+	
+<h1>Features Movies</h1>
+    
+<img src ="http://www.wellgousa.com/sites/default/files/styles/key_art_poster/public/2018-05/406x600_38.jpg?itok=Iqb3mvDq" id="movie">
+
+<img src="https://upload.wikimedia.org/wikipedia/en/f/fd/How_to_Train_Your_Dragon_3_poster.png" id="movie">
+    
+<img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Avengers_Infinity_War_poster.jpg" id="movie">
+    
+<img src="https://images-na.ssl-images-amazon.com/images/I/51CWmgcwyVL.jpg" id="movie">
+ 
+<br><br>
+<h1>Upcoming Movies</h1>
+    
+<img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" id="movie">
+    
+<img src="https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_.jpg" id="movie">
+
+<img src="http://www.movienewz.com/wp-content/uploads/2018/09/hobbs_and_shaw_movie_poster.jpg" id="movie">
+    
+<img src="https://images.fandango.com/ImageRenderer/0/0/redesign/static/img/default_poster.png/0/images/masterrepository/other/ant_man_ver5.jpg" id="movie">
+    
+<h1>Recent Movies</h1>
+<textarea placeholder="Write your comment here...."></textarea><br>
+<input type="submit" value="Send">
+    <br><br>
+<a href="all%20movies.html" id="ooo">| Watch At Home |</a>
+    
+    <p>Date/Time: <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));  
+</script>
+    
+</body>
+</html>
+
